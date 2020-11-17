@@ -2,7 +2,8 @@
 HttpRequestClient
 
 ### Initialize client 
-_Expected response object **RespObj**_
+_Expected response object **RespObj**_ 
+#
 `HttpRequestClient<RespObj> client = new HttpRequestClient<RespObj>(requestURL);`
 
 ### Add Request Header
@@ -10,18 +11,22 @@ _Expected response object **RespObj**_
 
 ### **GET** Request  
 _This would return response as **RespObj** _
+#
 `var resp =  client.Get();`
 
 ### **GET** Request  
 _This would return response as **string** _
+#
 `var resp =  client.GetStrng();`
 
 ### **POST** Request  
 _This would return response as **RespObj** _
+#
 `var resp =  client.Post(JsonConvert.SerializeObject(requestObject), PostType.String);`
 
 ### **POST** Request  
 _This would return response as **string** _
+#
 `var resp =  client.PostString(JsonConvert.SerializeObject(request), PostType.String);`
 
 ### Access HttpWebResponse
