@@ -1,5 +1,6 @@
 # AspNetCoreLibrary.HttpRequestClient
-HttpRequestClient
+Easy to use .NetCore Http Client where you can call an API with at least 2 line of code.
+_snipet below_
 
 ### Initialize client 
 `HttpRequestClient<RespObj> client = new HttpRequestClient<RespObj>(requestURL);`
